@@ -1,20 +1,27 @@
 body {
   background: #2f558e url(../img/bg.png) repeat 0 0;
   background-size: 400px auto;
-  font-family: sans-serif;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
 }
 img {
   display: block;
   width: 50px;
   margin: 20px auto;
 }
-button {
+.transition {
+  transition: padding 0.3s ease-out, background-color 1s ease;
+}
+.button{
   background: #dae1e4;
   border: none;
   border-radius: 5px;
   color: #1d3c6a;
   font-size: 24px;
-  width: 480px;
+  width: 200px;
   padding: 40px 0;
   margin: 0px -20px;
   outline: none;
@@ -32,4 +39,8 @@ button {
   color: #dae1e4;
   display: block;
   padding: 40px 20px;
+}
+.button:hover {
+  padding: 30px;
+  background-color: cyan;
 }
